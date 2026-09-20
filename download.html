@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Download Resume | Vishal Suryawanshi</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><a class="logo" href="index.html">VS<span>.</span></a><a class="btn outline" href="index.html" style="margin-top:0">← Back</a></header>
+<main>
+<section>
+<small>RESUME</small><h1>Download my resume.</h1><p>Please fill in the short form below. After submission, the resume download button will appear.</p>
+<div class="simple-card" style="max-width:720px;margin-top:28px">
+<form action="https://formsubmit.co/vishhal1997@gmail.com" method="POST" class="resume-form" id="resumeForm">
+<input type="hidden" name="_subject" value="New Resume Download Request – Vishal Portfolio">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://suryawanshi1997.github.io/download.html?submitted=1">
+<input type="hidden" name="_captcha" value="true">
+<label>Name</label><input type="text" name="Name" placeholder="Your full name" required>
+<label>Contact Number</label><input type="tel" name="Contact Number" placeholder="+91 XXXXX XXXXX" pattern="[0-9+()\-\s]{10,18}" required>
+<label>Email</label><input type="email" name="email" placeholder="you@example.com" required>
+<label>Why are you downloading my resume?</label><select name="Reason" required><option value="" selected disabled>Select a reason</option><option>Job opportunity / recruitment</option><option>Professional networking</option><option>College / academic purpose</option><option>General reference</option><option>Other</option></select>
+<label>Message <span>(optional)</span></label><textarea name="Message" rows="4" placeholder="Optional message"></textarea>
+<label class="consent"><input type="checkbox" required name="Consent" value="I agree to share these details for resume/contact purposes."><span>I agree to share these details for resume/contact purposes.</span></label>
+<button class="btn" type="submit">Submit Request →</button>
+</form>
+<div id="downloadBox" style="display:none;margin-top:24px"><p style="color:#6ee7d8;font-weight:700">Thank you. Your request has been submitted.</p><a class="btn" href="resume.pdf" download="Vishal_Suryawanshi_Resume.pdf">Download Resume PDF ↓</a></div>
+</div>
+</section>
+</main>
+<script>if(new URLSearchParams(location.search).get('submitted')==='1'){document.getElementById('resumeForm').style.display='none';document.getElementById('downloadBox').style.display='block'}</script>
+</body></html>
